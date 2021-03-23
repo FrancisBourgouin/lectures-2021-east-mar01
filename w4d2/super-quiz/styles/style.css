@@ -1,0 +1,73 @@
+/* Force no margin + border-box */
+
+*{
+  margin:0;
+  box-sizing:border-box;
+}
+
+/* Layout CSS */
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:center;
+  font-size:16px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header CSS */
+
+header{
+  width:100%;
+  background:#333;
+  color:white;
+  text-align:center;
+  padding:1.5em;
+}
+header h1{
+  font-size:3em;
+  letter-spacing: 0.05em;
+  text-align: center;
+  font-family: 'Train One', cursive;
+  margin-bottom:1em;
+}
+
+/* Main CSS */
+
+main {
+  padding:1.5em;
+}
+main .question{
+  font-size:2em;
+}
+main .answer{
+  text-align:center;
+  padding:2em;
+}
+main .answer button{
+  font-size:2em;
+  padding:0.5em 1em;
+  font-weight:700;
+  text-transform: uppercase;
+  font-style:italic;
+  color:white;
+  background:#333;
+  border:1px solid black
+}
+main .answer button.selected,
+main .answer button:hover{
+  cursor:pointer;
+  color:#333;
+  background:white;
+}
+
+/* Result */
+.result{
+  text-align:center;
+  padding:1.5em;
+}
+.result img{
+  width:auto;
+  height:500px;
+}
