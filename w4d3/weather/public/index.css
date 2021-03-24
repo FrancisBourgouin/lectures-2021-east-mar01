@@ -1,0 +1,124 @@
+form{
+  border:1px solid black;
+  padding:0.5em;
+  
+  display:flex;
+  flex-direction: column;
+  width:700px;
+  align-items: center;
+}
+input, textarea, button{
+  width:95%;
+  margin:0.5em 0;
+  font-size:2em;
+}
+/* Force no margin + border-box */
+
+*{
+  margin:0;
+  box-sizing:border-box;
+}
+
+/* Layout CSS */
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items:center;
+  font-size:18px;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header CSS */
+
+header{
+  width:100%;
+  background:#333;
+  color:white;
+  text-align:center;
+  padding:1.5em;
+}
+h1{
+  font-size:3em;
+  letter-spacing: 0.05em;
+  font-style: italic;
+  font-weight:900;
+  text-align: center;
+  margin-bottom:1em;
+}
+
+/* Main CSS */
+
+main {
+  padding:1.5em;
+}
+main .question{
+  font-size:2em;
+}
+main .answer{
+  text-align:center;
+  padding:2em;
+}
+main .answer button{
+  font-size:2em;
+  padding:0.5em 1em;
+  font-weight:700;
+  text-transform: uppercase;
+  font-style:italic;
+  color:white;
+  background:#333;
+  border:1px solid black
+}
+main .answer button.selected,
+main .answer button:hover{
+  cursor:pointer;
+  color:#333;
+  background:white;
+}
+
+/* Result */
+.result{
+  text-align:center;
+  padding:1.5em;
+}
+.result img{
+  width:auto;
+  height:500px;
+}
+
+ul{
+  padding-left: 0;
+}
+li{
+
+  list-style-type: none;;
+}
+li h1{
+  text-align: left;
+  margin-bottom:0.1em;
+}
+
+section {
+  width: 700px;
+  margin-top: 2em;
+}
+footer{
+  text-align: right;
+
+}
+footer span{
+  font-weight: 700;
+}
+
+article{
+  margin-bottom:2em;
+}
+article h1{
+  margin-bottom:0;
+  text-align: left;
+}
+
+article p{
+  font-size:1.5em;
+}
