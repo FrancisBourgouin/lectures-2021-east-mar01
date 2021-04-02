@@ -1,9 +1,15 @@
+Hi Nelli!
+Hi Mona!
+Hi Francis!
+
+
 # SQL Intro
 
 ## Content
 
 - Weekend recap
 - What is a database
+
 - Why should we use it
 - Writing SQL
 - Creating databases
