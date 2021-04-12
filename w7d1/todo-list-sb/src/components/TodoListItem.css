@@ -1,0 +1,9 @@
+li{
+  list-style-type: none;
+  border:0.5em solid black;
+  background:#ddd;
+  padding:0.5em;
+}
+li h1.completed{
+  text-decoration: line-through;
+}
