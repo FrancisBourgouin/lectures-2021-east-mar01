@@ -5,6 +5,7 @@ import CityButtonListItem from './components/CityButtonListItem';
 import { useEffect, useState } from 'react';
 import axios from 'axios'
 import { formatWeather, kelvinToCelsiusConverter } from './helpers/tempHelpers';
+import CityButtonList from './components/CityButtonList';
 
 const cityList = ['Toronto', 'Montréal']
 
@@ -27,9 +28,13 @@ function App() {
       setCurrentCity={() => setCurrentCity(cityName)}
     />
   )
+
+
+
   return (
     <div className="App">
       <h1>Super weather app done fast</h1>
+      <CityButtonList />
       {currentWeatherData && <Weather currentCity={currentCity} condition={currentWeatherData.weather[0].description} parsedTemp={formatWeather(kelvinToCelsiusConverter(currentWeatherData.main.temp))} />}
       {parsedButtons}
     </div>
