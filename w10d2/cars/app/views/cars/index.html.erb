@@ -1,0 +1,15 @@
+<h1>Super cars! (guitar solo)</h1>
+
+
+<section class="car-list" id="car-list" style="font-size:5em">
+  <% @cars.each do |car| %>
+    <div class="car">
+      <p class="details">
+        <strong>Make:</strong> <%= car.make.make %> |
+        <strong>Model:</strong> <%= car.model.model %> |
+        <strong>Trim:</strong> <%= car.trim.trim %> |
+        <a href="/cars/<%= car.id %>">Click here to view more</a>
+      </p>
+    </div>
+  <% end %>
+</section>
