@@ -4,7 +4,7 @@
 gem 'rspec-rails'
 ```
 
-## Create rspec files
+## Create rspec file
 
 'rails g rspec:install'
 
